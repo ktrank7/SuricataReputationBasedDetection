@@ -1,0 +1,3 @@
+alert ip any any -> any any (msg:"BAD IP REPUTATION:High Confidence Alert";iprep:any,HostA,>,49; sid:30000; rev:1;)
+
+alert ip any any -> any any (msg:"BAD IP REPUTATION:Low Confidence Alert";iprep:any,HostA,<,51; sid:30001; rev:1;)
