@@ -13,8 +13,9 @@ fi
 
 
 # download malware domain list
-wget -O ip.list https://gitlab.cs.wwu.edu/tsikerm/assignment-files/raw/master/ip.txt
-wget -O csv.list https://gitlab.cs.wwu.edu/tsikerm/assignment-files/raw/master/mdl.csv
+wget -O ip.list http://www.malwaredomainlist.com/hostslist/ip.txt
+wget -O csv.list http://www.malwaredomainlist.com/mdlcsv.php
+
 
 # extract unique ip
 sed -e "s/\r//g" ip.list >> update-mdl.list
